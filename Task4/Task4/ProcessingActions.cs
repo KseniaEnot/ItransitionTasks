@@ -6,7 +6,7 @@ namespace Task4
     {
         public static void Main(String[] args)
         {
-            if ((args.Length < 3) || (args.Length % 2 == 0)) //bez povtoreni!!!
+            if ((args.Length < 3) || (args.Length % 2 == 0))
             {
                 Console.WriteLine("Encorrect line. Try again.");
                 return;
@@ -18,7 +18,6 @@ namespace Task4
             Console.Write("HMAC: ");
             foreach (var item in hmac)
                 Console.Write(item.ToString("X2"));
-            //Console.WriteLine();
             int userMove = MenuOperation.printMenu(args)-1;
             Console.WriteLine($"Your move: {args[userMove]}");
             Console.WriteLine($"Computer move: {args[systMove]}");
